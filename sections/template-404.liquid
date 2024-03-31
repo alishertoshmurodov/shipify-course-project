@@ -3,13 +3,13 @@
     <div class="my-4">
         <p class="text-base md:text-xl leading-normal">{{ section.settings.subtext }}</p>
     </div>
-    <button class="my-4 button br-1 color-white">
+    <button class="my-4 button br-1 color-white bg-green-500 text-white p-3 shadow rounded ">
         {% if section.settings.button_url == blank %}
             {% assign button_url = shop.secure_url %}
         {% else %}
             {% assign button_url = section.settings.button_url %}
         {% endif %}
-        <a class="py-4 text-xl bg-green" href="{{ button_url }}">{{ section.settings.button_text }}</a>
+        <a class="py-4 text-xl green" href="{{ button_url }}">{{ section.settings.button_text }}</a>
     </button>
 </div>
 
